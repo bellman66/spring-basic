@@ -1,0 +1,14 @@
+
+# Database Connection
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/test'
+    username: 'testuser'
+    password: 'testuser'
+    tomcat:
+      max-wait: 100000
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
