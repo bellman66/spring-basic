@@ -1,4 +1,4 @@
-package base.template.springbasic.global.base.data.entity;
+package base.template.springbasic.global.base.entity;
 
 import lombok.Getter;
 import lombok.Setter;

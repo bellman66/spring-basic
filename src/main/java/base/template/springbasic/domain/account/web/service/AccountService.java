@@ -13,8 +13,17 @@ public class AccountService {
 
     private final AccountRepository accountRepository;
 
+    @Transactional
+    public Account save(Account account) {
+        return accountRepository.save(account);
+    }
+
     public Account find(long id) {
         return accountRepository.findById(id)
                 .orElseThrow(RuntimeException::new);
+    }
+
+    public Account find(String email) {
+        return accountRepository.getByEmail(email);
     }
 }

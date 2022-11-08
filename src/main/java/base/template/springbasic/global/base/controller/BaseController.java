@@ -1,19 +1,18 @@
 package base.template.springbasic.global.base.controller;
 
-import base.template.springbasic.global.base.data.response.BaseResponse;
-import base.template.springbasic.global.base.data.response.enums.RStatus;
-import base.template.springbasic.global.base.data.response.enums.RType;
-import base.template.springbasic.global.base.data.response.impl.Responsive;
+import base.template.springbasic.global.base.response.BaseResponse;
+import base.template.springbasic.global.base.response.enums.RStatus;
+import base.template.springbasic.global.base.response.impl.Responsive;
 
 import java.util.Map;
 
 public abstract class BaseController implements Responsive {
 
     public BaseResponse createResponse() {
-        return create(RType.BASE, RStatus.OK, null);
+        return createRes(RStatus.OK, null);
     }
 
     public BaseResponse createResponse(Map<String, Object> aData) {
-        return create(RType.DATA, RStatus.OK, aData);
+        return createRes(RStatus.OK, aData);
     }
 }

@@ -1,4 +1,4 @@
-package base.template.springbasic.global.base.data.response.enums;
+package base.template.springbasic.global.base.response.enums;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
